@@ -16,5 +16,10 @@ namespace JinTeamForSeller
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(DateTime.Now.ToString().Remove(DateTime.Now.ToString().IndexOf('오'),2).Replace(" ","").Replace("-","").Replace(":",""));
+        }
     }
 }
